@@ -5,8 +5,8 @@ let app = new Vue({
     task: []
   },
   methods: {
-    addTask: function () {
-      task.push(message);
+    addTask () {
+      this.task.push(this.message);
     }
   }
 })
