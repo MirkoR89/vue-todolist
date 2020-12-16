@@ -23,7 +23,7 @@
     <h3>Todo List</h3>
     <div>
       <ul>
-        <li>{{task}}</li>
+        <li v-for="task in tasks">{{ task }} <i class="fas fa-trash" @click="removeTask"></i></li>
       </ul>
     </div>
   </div>
