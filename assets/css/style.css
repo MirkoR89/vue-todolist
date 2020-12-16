@@ -1,3 +1,4 @@
+/* Utility classes */
 * {
   margin: 0;
   padding: 0;
@@ -7,4 +8,42 @@
 body {
   font-family: 'Roboto', sans-serif;
   background-color: lightblue;
+}
+
+.flex {
+  display: flex;
+}
+
+.direction{
+  flex-direction: column;
+}
+
+.align-center {
+  align-items: center;
+}
+
+/* Container */
+
+.container img {
+  width: 25%;
+  margin: 50px auto 0 auto;
+}
+
+.container .bt_input {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.bt_input input {
+  width: 80%;
+  height: 25px;
+  border-radius: 3px;
+  border: none;
+}
+
+.bt_input button {
+  width: 50px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
 }
