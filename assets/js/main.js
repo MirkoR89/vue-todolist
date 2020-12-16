@@ -6,14 +6,13 @@ let app = new Vue({
       "test1",
       "test2",
       "test3"
-
     ]
   },
   methods: {
-    addTask () {
+    addTask() {
       this.tasks.push(this.message);
     },
-    removeTask (index) {
+    removeTask(index) {
       this.tasks.splice(index, 1);
     }
   }

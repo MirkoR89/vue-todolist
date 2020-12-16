@@ -18,12 +18,12 @@
     <img src="assets/img/logo.png" alt="Logo Boolean Careers">
     <div class="bt_input">
       <input type="text" v-model="message">
-      <button type="button" name="button" @click = "addTask">Add</button>
+      <button type="button" name="button" @click="addTask">Add</button>
     </div>
     <h3>Todo List</h3>
     <div>
       <ul>
-        <li v-for="task in tasks">{{ task }} <i class="fas fa-trash" @click="removeTask"></i></li>
+        <li v-for="(task, index) in tasks">{{ task }} <i class="fas fa-trash" @click="removeTask(index)"></i></li>
       </ul>
     </div>
   </div>
