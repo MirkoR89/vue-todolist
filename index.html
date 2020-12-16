@@ -17,13 +17,13 @@
   <div class="container flex direction align-center" id="app">
     <img src="assets/img/logo.png" alt="Logo Boolean Careers">
     <div class="bt_input">
-      <input type="text">
-      <button type="button" name="button">Add</button>
+      <input type="text" v-model="message">
+      <button type="button" name="button" @click = "addTask">Add</button>
     </div>
     <h3>Todo List</h3>
     <div>
       <ul>
-
+        <li>{{message}}</li>
       </ul>
     </div>
   </div>
