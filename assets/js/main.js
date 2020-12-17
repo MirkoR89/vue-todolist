@@ -16,9 +16,11 @@ let app = new Vue({
       this.tasks.splice(index, 1);
     },
     mounted() {
-      window.addEventListener('keyup', function(event) {
-        if (event.keyCode === 13) {
-          app.callEvent();
+      document.addEventListener('keyup', e => {
+        console.log(e);
+        if (e.key === 13) {
+          app.addTask();
+
         }
       });
     }
