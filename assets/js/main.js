@@ -10,18 +10,14 @@ let app = new Vue({
   },
   methods: {
     addTask() {
-      this.tasks.push(this.message);
+      if (this.message.length >= 4 ) {
+        this.tasks.push(this.message);
+      } else {
+        this.message = "Inserisci almeno 4 caratteri"
+      }
     },
     removeTask(index) {
       this.tasks.splice(index, 1);
     }
-  },
-  mounted() {
-    document.addEventListener('keyup', e => {
-      console.log(e);
-      if (e.key === 13) {
-        app.addTask();
-      }
-    });
   }
 })

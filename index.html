@@ -18,7 +18,7 @@
 
     <img src="assets/img/avatar_mirko_blu.png" alt="Personal Logo">
     <div class="bt_input">
-      <input type="text" v-model="message">
+      <input type="text" v-model="message" @keyup.enter="addTask">
       <button type="button" name="button" @click="addTask">Add</button>
     </div>
     <div class="todo_list">
@@ -26,7 +26,6 @@
       <ul>
         <li v-for="(task, index) in tasks">{{ task }} <i class="fas fa-trash" @click="removeTask(index)"></i></li>
       </ul>
-      <div @keyup.13="addTask"></div>
     </div>
   </div>
 
