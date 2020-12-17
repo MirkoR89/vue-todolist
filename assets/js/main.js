@@ -14,7 +14,8 @@ let app = new Vue({
         this.tasks.push(this.message);
       } else {
         this.message = "Inserisci almeno 4 caratteri"
-      }
+      };
+      this.message = "";
     },
     removeTask(index) {
       this.tasks.splice(index, 1);
