@@ -6,8 +6,9 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: lightblue;
+  font-family: 'Fira Mono', monospace;
+  background-color: #D4E0F4;
+  color: #083866;
 }
 
 .flex {
@@ -22,15 +23,24 @@ body {
   align-items: center;
 }
 
+.baseline {
+  align-items: baseline;
+}
+
+.justify {
+  justify-content:space-between;
+}
+
 /* Container */
 .container img {
   width: 20%;
   margin: 50px auto 0 auto;
 }
 
+/* Inout and button */
 .container .bt_input {
   width: 50%;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 
 .bt_input input {
@@ -40,32 +50,40 @@ body {
   border: none;
 }
 
+.bt_input button {
+  width: 18%;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border: none;
+}
+/* Todo box */
+.todo_list {
+  width: 30%;
+  text-align: center;
+  margin: 50px;
+}
 .todo_list h3 {
   font-size: 2rem;
-  font-weight: 900;
-  padding: 30px;
 }
 
 .todo_list ul {
-  background-color: gray;
+  background-color: #00CDB4;
+  margin-top: 50px;
   padding: 30px;
-  border-radius: 8px;
+  border-radius: 25px;
+  border: 15px solid #083866;
 }
 
 .todo_list li {
   list-style-type: none;
-  line-height: 50px;
-  font-size: 1.5rem;
-  text-align: center;
+  line-height: 70px;
+  font-size: 2rem;
 }
 
 .todo_list li i:hover {
   cursor: pointer;
 }
 
-.bt_input button {
-  width: 19%;
-  padding: 5px 10px;
-  border-radius: 3px;
-  border: none;
+.todo_list p {
+  font-size: 1.2rem;
 }
