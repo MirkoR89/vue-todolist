@@ -14,6 +14,13 @@ let app = new Vue({
     },
     removeTask(index) {
       this.tasks.splice(index, 1);
+    },
+    mounted() {
+      window.addEventListener('keyup', function(event) {
+        if (event.keyCode === 13) {
+          app.callEvent();
+        }
+      });
     }
   }
 })

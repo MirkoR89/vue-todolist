@@ -14,7 +14,7 @@ body {
   display: flex;
 }
 
-.direction{
+.direction {
   flex-direction: column;
 }
 
@@ -23,9 +23,8 @@ body {
 }
 
 /* Container */
-
 .container img {
-  width: 25%;
+  width: 20%;
   margin: 50px auto 0 auto;
 }
 
@@ -39,6 +38,29 @@ body {
   height: 25px;
   border-radius: 3px;
   border: none;
+}
+
+.todo_list h3 {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 30px;
+}
+
+.todo_list ul {
+  background-color: gray;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.todo_list li {
+  list-style-type: none;
+  line-height: 50px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.todo_list li i:hover {
+  cursor: pointer;
 }
 
 .bt_input button {
