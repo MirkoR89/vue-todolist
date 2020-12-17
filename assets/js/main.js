@@ -12,10 +12,10 @@ let app = new Vue({
     addTask() {
       if (this.message.length >= 4 ) {
         this.tasks.push(this.message);
+        this.message = "";
       } else {
         this.message = "Inserisci almeno 4 caratteri"
       };
-      this.message = "";
     },
     removeTask(index) {
       this.tasks.splice(index, 1);
