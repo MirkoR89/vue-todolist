@@ -14,23 +14,22 @@
 
 <body>
   <div class="container flex direction align-center" id="app">
-
     <img src="assets/img/todo_list.png" alt="Personal Logo">
 
     <!-- Inout and button -->
     <div class="bt_input">
       <input type="text" v-model="message" @keyup.enter="addTask">
-      <button type="button" name="button" @click="addTask">Add</button>
+      <button type="button" name="button" @click="addTask"><i class="fas fa-plus"></i></button>
     </div>
 
     <!-- Todo box -->
     <div class="todo_list">
-      <h3>Todo List</h3>
+      <h3>TODO LIST</h3>
 
       <!-- To do list   -->
       <ul>
         <li class="flex justify" v-for="(task, index) in tasks"><span>{{ task }} </span><i class="fas fa-trash" @click="removeTask(index)"></i></li>
-        <p v-if="tasks.length == 0"><span>Your job is finish!</span><img src="assets/img/chill_out.png" alt=""></p>
+        <p v-if="tasks.length == 0"><span>All done!</span><img src="assets/img/chill_out.png" alt=""></p>
       </ul>
 
     </div>
