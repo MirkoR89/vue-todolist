@@ -14,15 +14,14 @@ let app = new Vue({
     },
     removeTask(index) {
       this.tasks.splice(index, 1);
-    },
-    mounted() {
-      document.addEventListener('keyup', e => {
-        console.log(e);
-        if (e.key === 13) {
-          app.addTask();
-
-        }
-      });
     }
+  },
+  mounted() {
+    document.addEventListener('keyup', e => {
+      console.log(e);
+      if (e.key === 13) {
+        app.addTask();
+      }
+    });
   }
 })
